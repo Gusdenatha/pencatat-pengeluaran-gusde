@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Pengeluaran Harian & Bulanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Pengelola Pengeluaran</h1>
+        
+        <div class="card">
+            <h3>Tambah Pengeluaran Baru</h3>
+            <form id="expense-form">
+                <div class="form-group">
+                    <label for="date">Tanggal</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="item">Nama Barang / Keperluan</label>
+                    <input type="text" id="item" placeholder="Contoh: Beli bensin, Makan siang" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Nominal (Rp)</label>
+                    <input type="number" id="amount" placeholder="Contoh: 25000" required>
+                </div>
+                <button type="submit" class="btn-submit">Simpan Catatan</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3>Riwayat Pengeluaran</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Barang/Keperluan</th>
+                            <th>Nominal</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expense-list">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card summary-card">
+            <h3>📅 Rekapitulasi Bulanan</h3>
+            <div class="filter-group">
+                <label for="filter-month">Pilih Bulan & Tahun:</label>
+                <input type="month" id="filter-month">
+            </div>
+            <div class="total-box">
+                <p>Total Pengeluaran Bulan Ini:</p>
+                <h2 id="monthly-total">Rp 0</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
