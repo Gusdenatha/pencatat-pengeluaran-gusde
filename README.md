@@ -13,8 +13,3 @@ Aplikasi web sederhana untuk mencatat pengeluaran harian dan melihat total rekap
 - **HTML5:** Struktur semantik aplikasi.
 - **CSS3:** Desain modern, layouting (Flexbox/Grid), dan variabel warna.
 - **Vanilla JavaScript:** Logika manipulasi DOM, perhitungan matematika, dan manajemen state via LocalStorage.
-
-## 🚀 Cara Menjalankan Proyek
-1. Clone repository ini:
-```bash
-   git clone [https://github.com/username-kamu/nama-repo.git](https://github.com/username-kamu/nama-repo.git)
